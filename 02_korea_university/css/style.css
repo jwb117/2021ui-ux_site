@@ -90,7 +90,7 @@ width: 100%; background: #23829f;}
 #contents .container{width: 1200px; margin: 0 auto; background: #fff;}
 
 #contents .container>ul>li{float: left; width: 25%; height: 225px; }
-#contents .container>ul>li:nth-child(2n){background: pink;}
+#contents .container>ul>li:nth-child(2n+1){background: pink;}
 #contents .container>ul>li:nth-child(1){width:75%; height: 450px; background: gray;}
 #contents .sliderWrap{position: relative;}
 #contents .bx-wrapper {
@@ -113,13 +113,23 @@ width: 100%; background: #23829f;}
 #contents .txtWrap{position: absolute; top:85px; left: 90px; width: 270px;}
 #contents .title{margin-bottom: 28px; font-size: 43pt; color: #1651b5; font-weight: normal;}
 #contents .fas{margin-left: 5px;}
-#contents .title .bold{font-weight: 800; }
+#contents .bold{font-weight: 800; }
 #contents .btn{display: block; padding: 0; width: 170px; line-height: 40px; color:#fff;
   text-align: center; border:1px solid #0044b1; transition: 0.5s; background: #0044b1; }
 
 
 
-#contents .container>ul>li:nth-child(2){height: 450px;}
+#contents .container>ul>li:nth-child(2){height: 450px; position: relative;}
+.second{background:url(../img/bg03.png) no-repeat center;}
+#contents .btn2{display: block; padding: 0; width: 170px; line-height: 40px; color:#fff;
+  text-align: center; border:1px solid #fff; transition: 0.5s; background: rgba(0,0,0,0.5);
+position: absolute; bottom:70px; right:80px; }
+#contents .second .h2{font-size:27pt; font-weight: normal; margin-bottom: 20px; color:#fff;}
+#contents .size{font-size: 27pt;}
+.second p {font-size:12pt; line-height: 17pt; color:#fff;}
+#contents .second_box{padding-top:100px; padding-left: 35px;}
+
+
 #contents .container>ul>li:nth-child(3){}
 #contents .container>ul>li:nth-child(4){}
 #contents .container>ul>li:nth-child(5){}
