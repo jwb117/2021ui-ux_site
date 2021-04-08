@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Common */
+.clearfix:after{content: ""; display: block; clear: both;}
+*{margin: 0; padding: 0;}
+body{min-width: 1600px; font-family: 'Noto Sans KR', sans-serif;}
+
+.header{width: 100%;}
+.top_bg{background: #086ca7 url(../img/banner.png) no-repeat center;}
+.top_box{margin: 0 auto; width: 980px; height: 90px;}
+.logo{display: block; float: left; padding-top: 14px;}
+.search_box{width: 290px; height: 30px; background-color: #fff; border-radius: 20px;
+float: left; margin-top: 30px; margin-left: 100px;}
+.header_txt{float: left; display: block; font-size: 25px;
+line-height: 90px; color:#fff; margin-left: 50px; margin-right: 7px;}
+.header_txt span{font-weight: bold; }
