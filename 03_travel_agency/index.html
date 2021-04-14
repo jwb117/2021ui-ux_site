@@ -14,6 +14,40 @@
   <script src="js/wow.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/shortcut.png">
+  <script>
+    $(document).ready(function(){
+      var jwbslider1 = $(".slider2").bxSlider({
+        controls:false,
+        pager:false,
+        auto:false
+      });
+      $(".nextbtn1").click(function(){
+      jwbslider1.goToNextSlide();
+
+      });
+
+      $(".prevbtn1").click(function(){
+      jwbslider1.goToPrevSlide();
+
+      });
+    });
+    $(document).ready(function(){
+      var jwbslider2 = $(".slider3").bxSlider({
+        controls:false,
+        pager:false,
+        auto:false
+      });
+      $(".nextbtn2").click(function(){
+      jwbslider2.goToNextSlide();
+
+      });
+
+      $(".prevbtn2").click(function(){
+      jwbslider2.goToPrevSlide();
+
+      });
+    });
+  </script>
 
 </head>
 <body>
@@ -105,13 +139,137 @@
     </div>
       <div class="article2">
         <ul class="list2 clearfix">
-          <li class="cont3"></li>
-          <li class="cont4"></li>
-          <li class="cont5">구름조금</li>
-          <li class="cont6">여행후기</li>
+
+          <li class="cont3">
+            <div class="cont3_box">
+              <ul class="slider2">
+                <li>
+                <img src="img/03travel03.png" alt="힐튼호텔">
+                <div class="cont3_text_box">
+                  <div class="cont3_text">
+                    <p>HILLTON HOTEL(PARIS)</p>
+                  </div>
+                  <div class="cont3_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+                <li>
+                <img src="img/03travel03.png" alt="힐튼호텔">
+                <div class="cont3_text_box">
+                  <div class="cont3_text">
+                    <p>HILLTON HOTEL(PARIS)</p>
+                  </div>
+                  <div class="cont3_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+                <li>
+                <img src="img/03travel03.png" alt="힐튼호텔">
+                <div class="cont3_text_box">
+                  <div class="cont3_text">
+                    <p>HILLTON HOTEL(PARIS)</p>
+                  </div>
+                  <div class="cont3_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+              </ul>
+              <div class="nextbtn1">
+                  <img src="img/nextBtn.png" alt="nextBtn"></div>
+              <div class="prevbtn1">
+                  <img src="img/prevBtn.png" alt="prevBtn"></div>
+            </div>
+          </li>
+
+          <li class="cont4">
+            <div class="cont4_box">
+              <ul class="slider3">
+                <li>
+                <img src="img/03travel04.png" alt="디즈니랜드">
+                <div class="cont4_text_box">
+                  <div class="cont4_text">
+                    <p>관광명소(디즈니랜드)</p>
+                  </div>
+                  <div class="cont4_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+                <li>
+                <img src="img/03travel04.png" alt="디즈니랜드">
+                <div class="cont4_text_box">
+                  <div class="cont4_text">
+                    <p>관광명소(디즈니랜드)</p>
+                  </div>
+                  <div class="cont4_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+                <li>
+                <img src="img/03travel04.png" alt="디즈니랜드">
+                <div class="cont4_text_box">
+                  <div class="cont4_text">
+                    <p>관광명소(디즈니랜드)</p>
+                  </div>
+                  <div class="cont4_star">
+                    <img src="img/fiveStar.png" alt="별점">
+                  </div>
+                </div>
+                </li>
+              </ul>
+              <div class="nextbtn2">
+                  <img src="img/nextBtn.png" alt="nextBtn"></div>
+              <div class="prevbtn2">
+                  <img src="img/prevBtn.png" alt="prevBtn"></div>
+            </div>
+          </li>
+
+          <li class="cont5">
+            <div class="cont5_box">
+              <img src="img/03travel05.png" alt="구름">
+              <p class="title">TOKYO</p></img>
+                <div class="cont5_text_box">
+                  <h3 class="subject">20℃ 구름조금</h3>
+                  <p>습도 60% 바람 남남동 2m/s</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="cont6">
+            <div class="cont6_box">
+              <img src="img/03travel06.png" alt="후기" class="exe1">
+              <div class="title">“해외여행은 처음이었는데, 하이미디어여행 덕분에 무사히 다녀올 수 있었어요.”</div>
+              <p>프랑스 파리 자유여행</p>
+              <img src="img/fiveStar.png" alt="별점" class="exe2">
+            </div>
+            <div class="cont6_text_box">
+              <h3>facebook 여행후기</h3>
+              <p>(임정희님)</p>
+            </div>
+          </li>
         </ul>
+
         <ul class="list3 clearfix">
-          <li class="cont7">여행정보</li>
+
+          <li class="cont7">
+            <img src="img/03travel07.png" alt="비행기">
+            <div class="cont7_img">
+              <img src="img/plus_btn.png" alt="plus">
+            </div>
+            <div class="cont7_text_box">
+              <h3>여행정보</h3>
+              <p>다양한 나라의 명소와 맛집 등</p>
+              <p>상세한 정보를 볼 수 있습니다.</p>
+            </div>
+          </li>
+
+
+
+
           <li class="cont8">맛집정보</li>
           <li class="cont9">숙박정보</li>
           <li class="cont10">여행자후기</li>
