@@ -47,14 +47,39 @@ line-height: 90px; color:#fff; margin-left: 50px; margin-right: 7px;}
 .top_menu li a:hover{color: #fff; background-color: #0e73a7;}
 
 	/*background-image*/
-.bg{height: 1260px; background: url(../img/01bg.png) no-repeat; background-size: cover;}
+.bg{width: 100%; padding: 52px 0; background:url(../img/01bg.jpg ) no-repeat; background-size:cover;}
   /*index contents*/
 .content{width: 980px; margin: 0 auto;}
+
   /*article1 section*/
-.bxslider{padding-top: 56px; margin-bottom: 16px;}
-.article1{float: left; height: 617px; margin-bottom: 16px;}
-.article1 ul{float: left;}
-.article1 li{display: block; float: left; width: 233px; height: 240px; margin-right: 16px;}
+  /* bxslider 만들기 */
+.article1 .wrap{width: 345px; height: 300px; position:relative;margin-bottom:16px;left:135px}
+.article1 .wrap .slider1 li img{width: 350px; height: 300px;}
+/* 슬라이더 탭 조절 부분 */
+.article1 .wrap .sliderTab{position: absolute; background: #0099cb; top:0; left:-135px;  width: 135px; height: 100%; color:#e7f2f6;}
+.article1 .wrap .sliderTab a{display: block; text-align: center; height: calc(100%/4);  color:#414141; line-height: 75px; }
+.article1 .wrap .sliderTab a:hover{color: #000; background:url(../img/triangle.png) no-repeat right top; }
+.article1 .wrap .sliderTab a.active{background: #fff;}
+.article1 .wrap .sliderTab a:hover i{color: #e61787;}
+/* 필드셋 부분  */
+.article1 .wrap fieldset{border: 0 none;}
+.article1 .wrap legend{display: block; position: absolute; left:0; top:-9999px;}
+.article1 .wrap .formWrap{width: 350px; margin: 0 auto;}
+.article1 .wrap .formWrap label{display: block; padding: 5px 0; width: 130px; height: 35px; text-align: center;}
+.article1 .wrap .formWrap .going{width: 270px; margin: 0 auto;}
+.article1 .wrap .formWrap .goselect{width: 280px; margin: 0 auto;}
+.article1 .wrap .formWrap select{display: block; width: 155px; height: 35px; font-size: 1rem; text-indent: 8px; border-radius: 5px;}
+.article1 .wrap .formWrap .right, .article1 .wrap .formWrap .left{float: left; width: 130px; }
+.article1 .wrap .formWrap .left input, .article1 .wrap .formWrap .right input{width: 130px; border-radius: 5px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-size: 0.8rem; font-weight: bold;}
+
+.article1 .wrap .formWrap .left{margin-right: 20px; margin-left: 35px;}
+.article1 .wrap .formWrap .right{margin-right: 0;}
+.article1 .wrap .formWrap .grade{float: left; }
+.article1 .wrap .formWrap .grade select{width: 130px; float: left; display: block; height: 35px;}
+
+.article1{float: left; margin-bottom: 16px;}
+.article1 ul.list1{float: left;}
+.article1 .list1 li{display: block; float: left; width: 233px; height: 240px; margin-right: 16px;}
 
 .article1 .list1 .cont1_box{width: 100%; height: 240px; position: relative; overflow: hidden;}
 .article1 .list1 .cont1_box img{width: 100%; height: 240px; transition: all 0.3s;}
@@ -140,19 +165,86 @@ line-height: 90px; color:#fff; margin-left: 50px; margin-right: 7px;}
 .article2 .list2 .cont6 .cont6_text_box h3{font-size: 16px; color: #fff; position: absolute; font-weight: bold; left:20px; top:10px;}
 .article2 .list2 .cont6 .cont6_text_box p{color: rgba(238,238,238,0.8); position: absolute; bottom: 10px; left:20px;}
 
-.article2 .list3 .cont7{width: 233px; height: 240px; position: relative; _overflow: hidden; display: flex; align-items: center; justify-content: center;  cursor: pointer;}
-.article2 .list3 .cont7 > img{transition: all 0.6s; width: 100%; position: absolute;}
-.article2 .list3 .cont7:hover > img{transform: scale(1.2);}
-.article2 .list3 .cont7 .cont7_img{transition: all 0.6s;}
-.article2 .list3 .cont7:hover .cont7_img{width: 50px; height: 50px; position: absolute;}
+/* 하단부분 메뉴 작업 */
+.article2 .list3 .cont7{width: 233px; height: 240px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;  cursor: pointer;}
 
+/* 공통 이미지 부분 작업 */
+.article2 .list3 .cont7 .cont7_img01{position: absolute;}
+.article2 .list3 .cont7:hover .cont7_img01 {transform: scale(1.2); transition: all 0.6s;}
+.article2 .list3 .cont7 .cont7_img02{transition: all 0.6s; position: absolute; opacity: 0;}
+.article2 .list3 .cont7:hover .cont7_img02{width: 50px; height: 50px; position: absolute; transform: rotate(360deg); opacity: 1;}
+/* 회전 하는 더하기 아이콘 작업 */
+.article2 .list3 .cont7 .cwrap{width: 50px; height: 50px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); border-radius: 25px; border: 3px solid #8a8a8a; transition:0.6s;}
+.article2 .list3 .cont7 .cwrap div{width: 30px; height: 4px; background: #8a8a8a; position: absolute; border-radius: 4px; left:50%; top: 50%;}
+.article2 .list3 .cont7:hover .cwrap div{position: absolute; opacity: 0; transition: all 0.3s;}
+.article2 .list3 .cont7 .cwrap .bar1{transform: translate(-50%, -50%);}
+.article2 .list3 .cont7 .cwrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
+/* 투명도 배경 박스 작업 */
+.article2 .list3 .cont7 .cont7_box_bg{width: 100%; height: 100%; background: rgba(15, 189, 227, 0.5); position: absolute; transform: scale(0.5); opacity: 0; transition: 0.1s;}
+.article2 .list3 .cont7:hover .cont7_box_bg{opacity: 0.7; transform: scale(1);}
+/* 텍스트 박스 부분 작업 */
+.article2 .list3 .cont7 .cont7_text_box{position: absolute; top: -80px; left: 17px; text-align: center; color: #fff;}
+.article2 .list3 .cont7:hover .cont7_text_box{position: absolute; transform: translateY(90px); color:#fff; transition: 0.6s;}
 
+/*아래에서 올라오는 목록*/
+.article2 .list3 .cont8{width: 233px; height: 240px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;  cursor: pointer;}
+/* 공통 이미지 부분 작업 */
+.article2 .list3 .cont8 .cont8_img01{width: 100%; position: absolute;}
+.article2 .list3 .cont8:hover .cont8_img01 {transform: scale(1.2); transition: all 0.6s;}
+.article2 .list3 .cont8 .cont8_img02{transition: all 0.6s; position: absolute; opacity: 0;}
+.article2 .list3 .cont8:hover .cont8_img02{width: 50px; height: 50px; position: absolute; transform: rotate(360deg); opacity: 1;}
+/* 회전 하는 더하기 아이콘 작업 */
+.article2 .list3 .cont8 .cwrap{width: 50px; height: 50px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); border-radius: 25px; border: 3px solid #8a8a8a; transition:0.6s;}
+.article2 .list3 .cont8 .cwrap div{width: 30px; height: 4px; background: #8a8a8a; position: absolute; border-radius: 4px; left:50%; top: 50%;}
+.article2 .list3 .cont8:hover .cwrap div{position: absolute; opacity: 0; transition: all 0.3s;}
+.article2 .list3 .cont8 .cwrap .bar1{transform: translate(-50%, -50%);}
+.article2 .list3 .cont8 .cwrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
+/* 투명도 배경 박스 작업 */
+.article2 .list3 .cont8 .cont8_box_bg{width: 100%; height: 100%; background: rgba(143, 38, 38, 0.5); position: absolute; transform: scale(0.5); opacity: 0; transition: 0.1s;}
+.article2 .list3 .cont8:hover .cont8_box_bg{opacity: 0.7; transform: scale(1);}
+/* 텍스트 박스 부분 작업 */
+.article2 .list3 .cont8 .cont8_text_box{position: absolute; bottom: -80px; left: 17px; text-align: center; color: #fff;}
+.article2 .list3 .cont8:hover .cont8_text_box{position: absolute; transform: translateY(-90px); color:#fff; transition: 0.6s;}
 
-.article2 .list3 .cont8{ background: #00f; }
-.article2 .list3 .cont9{ background: #00f; }
-.article2 .list3 .cont10{margin-right: 0;}
+/*위에서 올라오는 목록*/
+.article2 .list3 .cont9{width: 233px; height: 240px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;  cursor: pointer;}
+/* 공통 이미지 부분 작업 */
+.article2 .list3 .cont9 .cont9_img01{width: 100%; position: absolute;}
+.article2 .list3 .cont9:hover .cont9_img01 {transform: scale(1.2); transition: all 0.6s;}
+.article2 .list3 .cont9 .cont9_img02{transition: all 0.6s; position: absolute; opacity: 0;}
+.article2 .list3 .cont9:hover .cont9_img02{width: 50px; height: 50px; position: absolute; transform: rotate(360deg); opacity: 1;}
+/* 회전 하는 더하기 아이콘 작업 */
+.article2 .list3 .cont9 .cwrap{width: 50px; height: 50px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); border-radius: 25px; border: 3px solid #8a8a8a; transition:0.6s;}
+.article2 .list3 .cont9 .cwrap div{width: 30px; height: 4px; background: #8a8a8a; position: absolute; border-radius: 4px; left:50%; top: 50%;}
+.article2 .list3 .cont9:hover .cwrap div{position: absolute; opacity: 0; transition: all 0.3s;}
+.article2 .list3 .cont9 .cwrap .bar1{transform: translate(-50%, -50%);}
+.article2 .list3 .cont9 .cwrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
+/* 투명도 배경 박스 작업 */
+.article2 .list3 .cont9 .cont9_box_bg{width: 100%; height: 100%; background: rgba(152, 29, 172, 0.5); position: absolute; transform: scale(0.5); opacity: 0; transition: 0.1s;}
+.article2 .list3 .cont9:hover .cont9_box_bg{opacity: 0.7; transform: scale(1);}
+/* 텍스트 박스 부분 작업 */
+.article2 .list3 .cont9 .cont9_text_box{position: absolute; top: -80px; left: 17px; text-align: center; color: #fff;}
+.article2 .list3 .cont9:hover .cont9_text_box{position: absolute; transform: translateY(90px); color:#fff; transition: 0.6s;}
 
-
+/*아래에서 올라오는 목록*/
+.article2 .list3 .cont10{margin-right: 0; width: 233px; height: 240px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;  cursor: pointer;}
+/* 공통 이미지 부분 작업 */
+.article2 .list3 .cont10 .cont10_img01{width: 100%; position: absolute;}
+.article2 .list3 .cont10:hover .cont10_img01 {transform: scale(1.2); transition: all 0.6s;}
+.article2 .list3 .cont10 .cont10_img02{transition: all 0.6s; position: absolute; opacity: 0;}
+.article2 .list3 .cont10:hover .cont10_img02{width: 50px; height: 50px; position: absolute; transform: rotate(360deg); opacity: 1;}
+/* 회전 하는 더하기 아이콘 작업 */
+.article2 .list3 .cont10 .cwrap{width: 50px; height: 50px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); border-radius: 25px; border: 3px solid #8a8a8a; transition:0.6s;}
+.article2 .list3 .cont10 .cwrap div{width: 30px; height: 4px; background: #8a8a8a; position: absolute; border-radius: 4px; left:50%; top: 50%;}
+.article2 .list3 .cont10:hover .cwrap div{position: absolute; opacity: 0; transition: all 0.3s;}
+.article2 .list3 .cont10 .cwrap .bar1{transform: translate(-50%, -50%);}
+.article2 .list3 .cont10 .cwrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
+/* 투명도 배경 박스 작업 */
+.article2 .list3 .cont10 .cont10_box_bg{width: 100%; height: 100%; background: rgba(44, 146, 42, 0.5); position: absolute; transform: scale(0.5); opacity: 0; transition: 0.1s;}
+.article2 .list3 .cont10:hover .cont10_box_bg{opacity: 0.7; transform: scale(1);}
+/* 텍스트 박스 부분 작업 */
+.article2 .list3 .cont10 .cont10_text_box{position: absolute; bottom: -80px; left: 17px; text-align: center; color: #fff;}
+.article2 .list3 .cont10:hover .cont10_text_box{position: absolute; transform: translateY(-90px); color:#fff; transition: 0.6s;}
 
 /*main FOOTER*/
 footer{width: 980px; margin: 0 auto; padding-bottom: 27px;}
