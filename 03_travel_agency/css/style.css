@@ -72,7 +72,7 @@ line-height: 90px; color:#fff; margin-left: 50px; margin-right: 7px;}
 .article1 .wrap .formWrap .goselect{width: 280px; margin: 0 auto;}
 .article1 .wrap .formWrap select{display: block; width: 155px; height: 35px; font-size: 1rem; text-indent: 8px; border-radius: 5px; border:3px solid #363636;}
 .article1 .wrap .formWrap .right, .article1 .wrap .formWrap .left{float: left; width: 130px; }
-.article1 .wrap .formWrap .left input, .article1 .wrap .formWrap .right input{width: 130px; border-radius: 5px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-size: 0.8rem; font-weight: bold; border:3px solid #363636;}
+.article1 .wrap .formWrap .left input, .article1 .wrap .formWrap .right input{width: 130px; border-radius: 5px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-size: 0.6rem; font-weight: bold; border:3px solid #363636;}
 /* 좌우 배치 공통부분 */
 .article1 .wrap .formWrap .left{margin-right: 20px; margin-left: 35px;}
 .article1 .wrap .formWrap .right{margin-right: 0;}
