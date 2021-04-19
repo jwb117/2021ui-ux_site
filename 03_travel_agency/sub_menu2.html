@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/wow.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/shortcut.png">
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="top_bg">
+      <div class="top_box clearfix">
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="search_box">
+          <form action="#">
+            <label for="search">SEARCH</label>
+            <input type="text" id="search" placeholder="검색어를 입력하세요" class="input-search">
+            <input type="submit" value="button" class="btn-search">
+          </form>
+        </div>
+        <div class="header_txt"><p>
+          <span>+82</span> 02 1234 5678</p></div>
+        <ul class="sns_menu">
+          <li><a href="#"><img src="img/snsicon1.jpg" alt="facebook"></a></li>
+          <li><a href="#"><img src="img/snsicon2.jpg" alt="twitter"></a></li>
+          <li><a href="#"><img src="img/snsicon3.jpg" alt="google"></a></li>
+          <li><a href="#"><img src="img/snsicon4.jpg" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu_bg">
+      <ul class="top_menu clearfix">
+        <li><a href="sub_menu1.html">여행도시</a></li>
+        <li><a href="sub_menu2.html">호텔예약</a></li>
+        <li><a href="sub_menu3.html">렌트카</a></li>
+        <li><a href="sub_menu4.html">여행TIP</a></li>
+        <li><a href="sub_menu5.html">회사소개</a></li>
+        <li><a href="sub_menu6.html">커뮤니티</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+	<!-- footer -->
+<footer>
+  <div class="footer_box">
+    <ul class="clearfix">
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보취급방침</a></li>
+      <li><a href="#">사이트맵</a></li>
+      <li><a href="#">고객센터</a></li>
+      <li><a href="#">광고 및 제휴문의</a></li>
+    </ul>
+    <p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호:123-45-478910 대표이사:홍길동</p>
+    <p>COPYRIGHT©2014 HIMEDIA TOUR.ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+<script src="js/common.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".slider1").bxSlider({
+          controls:false,
+          pagerCustom:".sliderTab",
+          auto:false,
+          mode:"vertical",
+          touchEnabled: false
+      });
+
+    var jwbslider1 = $(".slider2").bxSlider({
+      controls:false,
+      pager:false,
+      auto:false
+    });
+    $(".nextbtn1").click(function(){
+    jwbslider1.goToNextSlide();
+
+    });
+
+    $(".prevbtn1").click(function(){
+    jwbslider1.goToPrevSlide();
+
+    });
+
+    var jwbslider2 = $(".slider3").bxSlider({
+      controls:false,
+      pager:false,
+      auto:false
+    });
+    $(".nextbtn2").click(function(){
+    jwbslider2.goToNextSlide();
+
+    });
+
+    $(".prevbtn2").click(function(){
+    jwbslider2.goToPrevSlide();
+
+    });
+
+
+});
+
+
+view(1);
+</script>
+
+</body>
+</html>

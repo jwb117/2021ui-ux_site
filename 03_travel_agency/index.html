@@ -15,49 +15,7 @@
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/wow.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
   <link rel="shortcut icon" href="img/shortcut.png">
-  <script>
-    $(document).ready(function(){
-      $(".slider1").bxSlider({
-            controls:false,
-            pagerCustom:".sliderTab",
-            auto:false,
-            mode:"vertical",
-            touchEnabled: false          
-        });
-
-      var jwbslider1 = $(".slider2").bxSlider({
-        controls:false,
-        pager:false,
-        auto:false
-      });
-      $(".nextbtn1").click(function(){
-      jwbslider1.goToNextSlide();
-
-      });
-
-      $(".prevbtn1").click(function(){
-      jwbslider1.goToPrevSlide();
-
-      });
-
-      var jwbslider2 = $(".slider3").bxSlider({
-        controls:false,
-        pager:false,
-        auto:false
-      });
-      $(".nextbtn2").click(function(){
-      jwbslider2.goToNextSlide();
-
-      });
-
-      $(".prevbtn2").click(function(){
-      jwbslider2.goToPrevSlide();
-
-      });
-    });
-  </script>
 
 </head>
 <body>
@@ -84,12 +42,12 @@
     </div>
     <div class="menu_bg">
       <ul class="top_menu clearfix">
-        <li><a href="citytour.html">여행도시</a></li>
-        <li><a href="hotel.html">호텔예약</a></li>
-        <li><a href="rent.html">렌트카</a></li>
-        <li><a href="tips.html">여행TIP</a></li>
-        <li><a href="company.html">회사소개</a></li>
-        <li><a href="community.html">커뮤니티</a></li>
+        <li><a href="sub_menu1.html">여행도시</a></li>
+        <li><a href="sub_menu2.html">호텔예약</a></li>
+        <li><a href="sub_menu3.html">렌트카</a></li>
+        <li><a href="sub_menu4.html">여행TIP</a></li>
+        <li><a href="sub_menu5.html">회사소개</a></li>
+        <li><a href="sub_menu6.html">커뮤니티</a></li>
       </ul>
     </div>
   </header>
@@ -551,5 +509,56 @@
     <p>COPYRIGHT©2014 HIMEDIA TOUR.ALL RIGHTS RESERVED</p>
   </div>
 </footer>
+
+<script>
+  $(document).ready(function(){
+    $(".slider1").bxSlider({
+          controls:false,
+          pagerCustom:".sliderTab",
+          auto:false,
+          mode:"vertical",
+          touchEnabled: false
+      });
+
+    var jwbslider1 = $(".slider2").bxSlider({
+      controls:false,
+      pager:false,
+      auto:false
+    });
+    $(".nextbtn1").click(function(){
+    jwbslider1.goToNextSlide();
+
+    });
+
+    $(".prevbtn1").click(function(){
+    jwbslider1.goToPrevSlide();
+
+    });
+
+    var jwbslider2 = $(".slider3").bxSlider({
+      controls:false,
+      pager:false,
+      auto:false
+    });
+    $(".nextbtn2").click(function(){
+    jwbslider2.goToNextSlide();
+
+    });
+
+    $(".prevbtn2").click(function(){
+    jwbslider2.goToPrevSlide();
+
+    });
+
+    $("ul.top_menu>li").click(function(){
+
+      $("ul.top_menu>li").removeClass("activation");
+      $(this).addClass("activation");
+
+  });
+});
+</script>
+
+
 </body>
 </html>
