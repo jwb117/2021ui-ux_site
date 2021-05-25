@@ -37,28 +37,62 @@ background-size: cover; height: 1000px; }
 .slider_txt > p{font-size: 26px; font-weight: bold;}
 
 /*content*/
-.content{position: relative; top:-310px;}
+.cont_bg{position: relative; background: #D1A07B;}
+.content{position: relative;  top:-310px;}
+.content .contList a{display: block; width: 310px; height: 310px;}
+
 .content .contList{width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; position: relative; margin-bottom: 30px;}
 .content .contList > li{width: 25%; height: 310px;}
 .content .contList > li:nth-child(2n+1){background: skyblue;}
 .content .contList > li:nth-child(3n+1){background: pink;}
 .content .contList > li:nth-child(2n){background: violet;}
-.content .contList > li:nth-child(1){}
-.content .contList > li:nth-child(2){}
+
+.content .contList > li:nth-child(1){background: #ff5b28; position: relative;}
+.content .contList > li:nth-child(1) a > img{position: absolute; top:81px; left:105px;}
+.content .contList > li:nth-child(1) a > p{width: 182px; position: absolute; top: 205px; left:50%; transform:translateX(-50%); color:#fff; font-size: 22px;}
+
+.content .contList > li:nth-child(2){background-image: url(../imgs/인테리어.png); background-repeat: no-repeat; background-size: cover; position: relative;}
+.content .contList > li:nth-child(2) img{position: absolute; top:105px; left:105px; cursor: pointer;}
+
 .content .contList > li:nth-child(3){}
-.content .contList > li:nth-child(4){background: red;}
-.content .contList > li:nth-child(5){}
-.content .contList > li:nth-child(6){background: red;}
-.content .contList > li:nth-child(7){width: 50%; background: violet;}
-.content .contList > li:nth-child(8){}
+
+.content .contList > li:nth-child(4){background: url(../imgs/커피샷추출.png) no-repeat center; }
+
+.content .contList > li:nth-child(5){background: #c4c4c4; position: relative;}
+.content .contList > li:nth-child(5) a > img{position: absolute; top:90px; left:105px;}
+.content .contList > li:nth-child(5) a > p{width: 182px; height: 25px; position: absolute; top: 205px; left:50%; transform:translateX(-50%); text-align: center; color:#fff; font-size: 22px;}
+
+.content .contList > li:nth-child(6){background-color: #ff5b28; position: relative;}
+.content .contList > li:nth-child(6) a > img{position: absolute; top:81px; left:105px;}
+.content .contList > li:nth-child(6) a > p{width: 182px; height: 25px; position: absolute; top: 205px; left:50%; transform:translateX(-50%); text-align: center; color:#fff; font-size: 22px;}
+
+.content .contList > li:nth-child(7){width: 50%; background: url(../imgs/근접샷추출.png) no-repeat center; color:#fff;}
+.content .contList > li:nth-child(7) .intro_txt{position: relative; left:50px; top:50px;}
+.content .contList > li:nth-child(7) .intro_txt > h2 {font-size: 30px; margin-bottom: 30px;}
+.content .contList > li:nth-child(7) .intro_txt > span:after {content: ""; display: block; width: 100px; height: 3px; background: #fff; margin-bottom: 25px;}
+.content .contList > li:nth-child(7) .intro_txt > p {font-size: 22px; font-weight: bold;}
+
+.content .contList > li:nth-child(8){background: url(../imgs/) no-repeat center;}
+
 .content .contList > li:nth-child(9){width: 50%;}
-.content .contList > li:nth-child(10){}
+
+
+.content .contList > li:nth-child(10){background-color: #7A009F; position: relative;}
+.content .contList > li:nth-child(10) a > img{position: absolute; top:81px; left:89px;}
+.content .contList > li:nth-child(10) a > p{width: 182px; height: 25px; position: absolute; top: 205px; left:50%; transform:translateX(-50%); text-align: center; color:#fff; font-size: 22px;}
+
+
 .content .contList > li:nth-child(11){}
-.content .contList > li:nth-child(12){}
+
+.content .contList > li:nth-child(12){background-color: #7A009F; position: relative;}
+.content .contList > li:nth-child(12) a > img{position: absolute; top:81px; left:105px;}
+.content .contList > li:nth-child(12) a > p{width: 182px; height: 25px; position: absolute; top: 205px; left:50%; transform:translateX(-50%); text-align: center; color:#fff; font-size: 22px;}
+
+
 .content .contList > li:nth-child(13){}
 .content .contList > li:nth-child(14){}
 
-/*container*/
+/* container */
 .container{height: 750px; background: #aaa url(../imgs/중간배너.png) no-repeat center; background-size: cover; color: #fff; padding: 70px 0; }
 .container .section{width: 1240px; margin: 0 auto; }
 .container .section > h4{text-align: center; }
