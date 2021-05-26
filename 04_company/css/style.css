@@ -134,12 +134,22 @@ padding-top: 50px; padding-left:50px;}
 
 .subCont .subContList > li:nth-child(2){height: 620px; background: #c4c4c4; position: relative;}
 .subCont .subContList > li:nth-child(2) > img{position: absolute; top:55px; left:55px;}
+.subCont .subContList > li:nth-child(2) .text_box{text-align: center; width: 220px; height: 270px; position: absolute; left:50%; top:310px; transform: translateX(-50%);}
+.subCont .subContList > li:nth-child(2) .text_box h3{font-weight: bold; font-size: 26px; color:#7A009F; margin-bottom: 20px; height: 60px;}
+.subCont .subContList > li:nth-child(2) .text_box p{font-size: 1rem; margin-bottom: 20px;}
+.subCont .subContList > li:nth-child(2) .text_box .flavor_btn{width: 220px; height: 40px; background: #7A009F; color:#fff; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+
+.subCont .subContList > li:nth-child(3){position: absolute; left:620px; top:0; color: #fff;}
+.subCont .subContList > li:nth-child(3) > img{opacity: 0.85;}
+.subCont .subContList > li:nth-child(3) .text_box{width: 238px; position: absolute; top: 80px; left: 40px;}
+.subCont .subContList > li:nth-child(3) .text_box h3{font-weight: bold; font-size: 22px; margin-bottom: 20px; text-align: center;}
+.subCont .subContList > li:nth-child(3) .text_box p{font-size: 1rem; font-weight: bold; }
 
 
-.subCont .subContList > li:nth-child(3){position: absolute; left:620px; top:0;}
 .subCont .subContList > li:nth-child(4){position: absolute; left:620px; bottom: 0;}
 .subCont .subContList > li:nth-child(5){position: absolute; right: 0; top: 0;}
-.subCont .subContList > li:nth-child(6){position: absolute; right: 0; bottom: 0;}
+
+.subCont .subContList > li:nth-child(6){position: absolute; right: 0; bottom: 0; background: #c4c4c4 url(../imgs/인증아이콘.png) center no-repeat;}
 
 
 
