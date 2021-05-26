@@ -38,7 +38,7 @@ background-size: cover; height: 1000px; }
 .slider_txt > p{font-size: 26px; font-weight: bold;}
 
 /*content*/
-.cont_bg{position: relative; background: #D1A07B; height: 1020px;}
+.cont_bg{position: relative; background: #D1A07B; height: 1010px;}
 .content{position: relative;  top:-310px;}
 .content .contList > li > a{display: block; width: 310px; height: 310px;}
 
@@ -122,11 +122,24 @@ padding-top: 50px; padding-left:50px;}
 .container .section .card_body > h3{margin-bottom: 10px;}
 
 /* subcont 영역 */
+.subCont_bg{background: #D1A07B; height: 1170px; width: 100%;}
+.subCont{padding-top: 80px;}
+.subContList{width: 1240px; height: 620px; margin: 0 auto; display: flex; flex-wrap: wrap; position: relative;}
+.subCont .subContList > li{display: block; width: 25%; height: 310px;}
+
+.subCont .subContList > li:nth-child(2n){background: skyblue;}
+.subCont .subContList > li:nth-child(2n+1){background: pink;}
+
+.subCont .subContList > li:nth-child(1){height: 620px;}
+
+.subCont .subContList > li:nth-child(2){height: 620px; background: #c4c4c4; position: relative;}
+.subCont .subContList > li:nth-child(2) > img{position: absolute; top:55px; left:55px;}
 
 
-
-
-
+.subCont .subContList > li:nth-child(3){position: absolute; left:620px; top:0;}
+.subCont .subContList > li:nth-child(4){position: absolute; left:620px; bottom: 0;}
+.subCont .subContList > li:nth-child(5){position: absolute; right: 0; top: 0;}
+.subCont .subContList > li:nth-child(6){position: absolute; right: 0; bottom: 0;}
 
 
 
