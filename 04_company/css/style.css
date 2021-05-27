@@ -58,7 +58,15 @@ background-size: cover; height: 1000px; }
 .content .contList > li:nth-child(2){background-image: url(../imgs/인테리어.png); background-repeat: no-repeat; background-size: cover; position: relative;}
 .content .contList > li:nth-child(2) img{position: absolute; top:105px; left:105px; cursor: pointer;}
 
-.content .contList > li:nth-child(3){}
+.content .contList > li:nth-child(3) .slider2 li{width: 310px; height: 310px;}
+.content .contList > li:nth-child(3) .slider2 .slider2-1{background: #c4c4c4;}
+.content .contList > li:nth-child(3) .slider2 .slider2-2{background: #7A009F;}
+.content .contList > li:nth-child(3) .slider2 .slider2-3{background: #FF5B28;}
+
+
+
+
+
 
 .content .contList > li:nth-child(4){background: url(../imgs/커피샷추출.png) no-repeat center; }
 
