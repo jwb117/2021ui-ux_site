@@ -59,6 +59,13 @@ background-size: cover; height: 1000px; }
 .content .contList > li:nth-child(2) img{position: absolute; top:105px; left:105px; cursor: pointer;}
 
 .content .contList > li:nth-child(3) .slider2 li{width: 310px; height: 310px;}
+.content .contList > li:nth-child(3) .slider_text{color:white; text-align: left; padding: 35px 50px;}
+.slider_text > h2 {font-size: 30px; font-weight: bold; margin-bottom: 35px;}
+.slider_text > p{font-size: 16px; font-weight: bold;}
+.content .contList > li:nth-child(3) .nextbtn1, .content .contList > li:nth-child(3) .prevbtn1
+{position: absolute; bottom: 50px; cursor: pointer;}
+.article2 .list2 .cont4 .cont4_box .nextbtn2{right:0; }
+.article2 .list2 .cont4 .cont4_box .prevbtn2{left:0; }
 .content .contList > li:nth-child(3) .slider2 .slider2-1{background: #c4c4c4;}
 .content .contList > li:nth-child(3) .slider2 .slider2-2{background: #7A009F;}
 .content .contList > li:nth-child(3) .slider2 .slider2-3{background: #FF5B28;}
