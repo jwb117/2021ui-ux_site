@@ -173,5 +173,10 @@ padding-top: 50px; padding-left:50px;}
 .subCont .banner .banner1{float: left; background: url(../imgs/banner1.png) center; height: 310px; width: 620px;}
 .subCont .banner .banner1 > p{font-weight: bold; font-size: 1rem; color:#8B5F3B; margin-bottom: 10px;}
 .subCont .banner .banner1 > h3{color:#8B5F3B; font-size: 30px; font-weight: bold; margin-bottom: 10px;}
-.subCont .banner .banner2{float: right; background: url(../imgs/banner2.png) center; height: 310px; width: 620px;}
+
+.subCont .banner .banner2{float: right; background: url(../imgs/banner2.png) center; height: 310px; width: 620px; position: relative;}
+.subCont .banner .banner2 > p{color:#bf33b1; font-weight: bold; font-size: 1rem; margin-bottom: 10px;}
+.subCont .banner .banner2 > h3{color: #2774ce; font-weight: bold; font-size: 30px;}
+.subCont .banner .banner2 .frape{position: absolute; bottom: 35px; right: 80px;}
+
 /* 푸터 영역 */
