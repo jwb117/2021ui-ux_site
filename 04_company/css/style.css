@@ -1,7 +1,10 @@
 @charset "UTF-8";
-
 body{min-width: 1920px; font-family: 'Roboto', sans-serif;}
 *{margin: 0; padding: 0;}
+::-webkit-input-placeholder { color: #fff !important; }
+::-moz-placeholder {color: #fff !important; }
+:-ms-input-placeholder { color: #fff !important; }
+:-o-input-placeholder { color: #fff !important; }
 
 /*header*/
 #header{width:100%; height: 100px; position: fixed; z-index: 9999; background:rgba(122,0,159,0.5); }
@@ -134,7 +137,7 @@ padding-top: 50px; padding-left:50px;}
 
 .subCont .subContList > li:nth-child(2){height: 620px; background: #c4c4c4; position: relative;}
 .subCont .subContList > li:nth-child(2) > img{position: absolute; top:55px; left:55px;}
-.subCont .subContList > li:nth-child(2) .text_box{text-align: center; width: 220px; height: 270px; position: absolute; left:50%; top:310px; transform: translateX(-50%);}
+.subCont .subContList > li:nth-child(2) .text_box{text-align: center; width: 220px; height: 273px; position: absolute; left:50%; top:310px; transform: translateX(-50%);}
 .subCont .subContList > li:nth-child(2) .text_box h3{font-weight: bold; font-size: 26px; color:#7A009F; margin-bottom: 20px; height: 60px;}
 .subCont .subContList > li:nth-child(2) .text_box p{font-size: 1rem; margin-bottom: 20px;}
 .subCont .subContList > li:nth-child(2) .text_box .flavor_btn{width: 220px; height: 40px; background: #7A009F; color:#fff; display: flex; justify-content: center; align-items: center; cursor: pointer;}
@@ -143,14 +146,28 @@ padding-top: 50px; padding-left:50px;}
 .subCont .subContList > li:nth-child(3) > img{opacity: 0.85;}
 .subCont .subContList > li:nth-child(3) .text_box{width: 238px; position: absolute; top: 80px; left: 40px;}
 .subCont .subContList > li:nth-child(3) .text_box h3{font-weight: bold; font-size: 22px; margin-bottom: 20px; text-align: center;}
-.subCont .subContList > li:nth-child(3) .text_box p{font-size: 1rem; font-weight: bold; }
+.subCont .subContList > li:nth-child(3) .text_box p{font-size: 1rem; font-weight: bold;}
 
 
-.subCont .subContList > li:nth-child(4){position: absolute; left:620px; bottom: 0;}
-.subCont .subContList > li:nth-child(5){position: absolute; right: 0; top: 0;}
+.subCont .subContList > li:nth-child(4){position: absolute; left:620px; bottom: 0;  padding-top: 62px; padding-left: 41px; background: url(../imgs/카페배경.png) center;}
+.subCont .subContList > li:nth-child(4) .search_box{width: 228px; height: 39px; background-color: #7A009F; border-radius: 10px; position: relative;}
+.subCont .subContList > li:nth-child(4) .search_box form{height: 30px;}
+.subCont .subContList > li:nth-child(4) .search_box .input-search{width: 160px; height: 20px; position: absolute; top: 50%; transform: translateY(-50%); display: block; border:0 none; outline: none; background: #7A009F; color:#fff; left: 20px;}
+.subCont .subContList > li:nth-child(4) .search_box .btn-search{width: 24px; height: 24px; border: 0; background: url(../imgs/Vector.png) no-repeat center; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); outline: none; cursor: pointer; text-indent:9999px;}
+.subCont .subContList > li:nth-child(4) span:after {content:""; display: block; width: 60px; height: 3px; background: #fff; margin: 20px auto;}
+.subCont .subContList > li:nth-child(4) .text_box{position: absolute; top: 170px; left: 38px; color: #fff }
+.subCont .subContList > li:nth-child(4) .text_box h3{text-align: center;}
 
-.subCont .subContList > li:nth-child(6){position: absolute; right: 0; bottom: 0; background: #c4c4c4 url(../imgs/인증아이콘.png) center no-repeat;}
+.subCont .subContList > li:nth-child(5){position: absolute; right: 0; top: 0; background: url(../imgs/로고희미.png) center; }
+.subCont .subContList > li:nth-child(5) .click{width: 310px; height: 310px;}
+.subCont .subContList > li:nth-child(5) span:after {content:""; display: block; width: 60px; height: 3px; background: #fff; margin: 20px auto;}
+.subCont .subContList > li:nth-child(5) .text_box{position: absolute; top: 170px; left: 84px; color: #fff }
+.subCont .subContList > li:nth-child(5) .text_box h3{text-align: center;}
 
+.subCont .subContList > li:nth-child(6){position: absolute; right: 0; bottom: 0; background: #c4c4c4;padding: 37px;}
+.subCont .subContList > li:nth-child(6) .text_box > h3{color:#fff; text-align: center;}
+.subCont .subContList > li:nth-child(6) .text_box > img{display: block; margin: 0 auto;}
+.subCont .subContList > li:nth-child(6) .text_box > p{color:#fff; ; font-size: 14px; text-align: center;}
 
 
 /* 푸터 영역 */
