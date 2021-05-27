@@ -58,22 +58,19 @@ background-size: cover; height: 1000px; }
 .content .contList > li:nth-child(2){background-image: url(../imgs/인테리어.png); background-repeat: no-repeat; background-size: cover; position: relative;}
 .content .contList > li:nth-child(2) img{position: absolute; top:105px; left:105px; cursor: pointer;}
 
-.content .contList > li:nth-child(3) .slider2 li{width: 310px; height: 310px;}
+.content .contList > li:nth-child(3) .sliderWrap{position: relative;}
+.content .contList > li:nth-child(3) .slider2 li{width: 310px; height: 310px; }
 .content .contList > li:nth-child(3) .slider_text{color:white; text-align: left; padding: 35px 50px;}
 .slider_text > h2 {font-size: 30px; font-weight: bold; margin-bottom: 35px;}
 .slider_text > p{font-size: 16px; font-weight: bold;}
-.content .contList > li:nth-child(3) .nextbtn1, .content .contList > li:nth-child(3) .prevbtn1
-{position: absolute; bottom: 50px; cursor: pointer;}
-.article2 .list2 .cont4 .cont4_box .nextbtn2{right:0; }
-.article2 .list2 .cont4 .cont4_box .prevbtn2{left:0; }
+.content .contList > li:nth-child(3) .nextbtn1,
+.content .contList > li:nth-child(3) .prevbtn1{position: absolute; cursor: pointer; z-index: 9999; top:75%;}
+.content .contList > li:nth-child(3) .nextbtn1{right:22.5%;}
+.content .contList > li:nth-child(3) .prevbtn1{left:45%;}
+
 .content .contList > li:nth-child(3) .slider2 .slider2-1{background: #c4c4c4;}
 .content .contList > li:nth-child(3) .slider2 .slider2-2{background: #7A009F;}
 .content .contList > li:nth-child(3) .slider2 .slider2-3{background: #FF5B28;}
-
-
-
-
-
 
 .content .contList > li:nth-child(4){background: url(../imgs/커피샷추출.png) no-repeat center; }
 
@@ -145,10 +142,22 @@ padding-top: 50px; padding-left:50px;}
 .subContList{width: 1240px; height: 620px; margin: 0 auto; display: flex; flex-wrap: wrap; position: relative; margin-bottom: 80px;}
 .subCont .subContList > li{display: block; width: 25%; height: 310px;}
 
-.subCont .subContList > li:nth-child(2n){background: skyblue;}
-.subCont .subContList > li:nth-child(2n+1){background: pink;}
-
 .subCont .subContList > li:nth-child(1){height: 620px;}
+.subCont .subContList > li:nth-child(1) .sliderWrap{position: relative;}
+.subCont .subContList > li:nth-child(1) .slider3 li{width: 310px; height: 310px; }
+.subCont .subContList > li:nth-child(1) .slider_text{color:white; text-align: left; padding: 35px 50px;}
+.slider_text > h2 {font-size: 30px; font-weight: bold; margin-bottom: 35px;}
+.slider_text > p{font-size: 16px; font-weight: bold;}
+.subCont .subContList > li:nth-child(1) .nextbtn2,
+.subCont .subContList > li:nth-child(1) .prevbtn2{position: absolute; cursor: pointer; z-index: 9999; top:75%;}
+.subCont .subContList > li:nth-child(1) .nextbtn2{right:22.5%;}
+.subCont .subContList > li:nth-child(1) .prevbtn2{left:45%;}
+
+.subCont .subContList > li:nth-child(1) .slider3 .slider3-1{background: #c4c4c4;}
+.subCont .subContList > li:nth-child(1) .slider3 .slider3-2{background: #7A009F;}
+.subCont .subContList > li:nth-child(1) .slider3 .slider3-3{background: #FF5B28;}
+
+
 
 .subCont .subContList > li:nth-child(2){height: 620px; background: #c4c4c4; position: relative;}
 .subCont .subContList > li:nth-child(2) > img{position: absolute; top:55px; left:55px;}

@@ -16,4 +16,17 @@ $(document).ready(function(){
   jwbslider1.goToPrevSlide();
   });
 
+  $(document).ready(function(){
+    var jwbslider2 = $(".slider3").bxSlider({
+      pager:false
+    });
+    $(".nextbtn2").click(function(){
+    jwbslider2.goToNextSlide();
+    });
+
+    $(".prevbtn2").click(function(){
+    jwbslider2.goToPrevSlide();
+    });
+
+  });
 });
