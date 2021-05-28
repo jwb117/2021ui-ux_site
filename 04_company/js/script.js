@@ -6,7 +6,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   var jwbslider1 = $(".slider2").bxSlider({
-    pager:false
+    pager:false,
+    controls:false
   });
   $(".nextbtn1").click(function(){
   jwbslider1.goToNextSlide();
@@ -18,7 +19,9 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     var jwbslider2 = $(".slider3").bxSlider({
-      pager:false
+      pager:false,
+      controls:false
+
     });
     $(".nextbtn2").click(function(){
     jwbslider2.goToNextSlide();

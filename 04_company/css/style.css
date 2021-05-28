@@ -143,15 +143,16 @@ padding-top: 50px; padding-left:50px;}
 .subContList{width: 1240px; height: 620px; margin: 0 auto; display: flex; flex-wrap: wrap; position: relative; margin-bottom: 80px;}
 .subCont .subContList > li{display: block; width: 25%; height: 310px;}
 
-.subCont .subContList > li:nth-child(1){}
+
 .subCont .subContList > li:nth-child(1) .sliderWrap{position: relative;}
 .subCont .subContList > li:nth-child(1) .slider3 .icons {position: absolute; top:82px; left:102px;}
 .subCont .subContList > li:nth-child(1) .slider3 li{width: 310px; height: 620px; }
-.subCont .subContList > li:nth-child(1) .slider_text{position: absolute; color:white; padding: 35px 50px; top: 290px;}
+.subCont .subContList > li:nth-child(1) .slider_text{position: absolute; color:white; padding: 0 50px 35px 50px; top:50%;}
 .slider_text > h2 {font-size: 30px; font-weight: bold; margin-bottom: 35px; text-align: center;}
 .slider_text > p{font-size: 16px; font-weight: bold; text-align: left; }
 .subCont .subContList > li:nth-child(1) .nextbtn2,
-.subCont .subContList > li:nth-child(1) .prevbtn2{position: absolute; cursor: pointer; z-index: 9999; bottom: 0; right: 0;}
+.subCont .subContList > li:nth-child(1) .prevbtn2{position: absolute; cursor: pointer; z-index: 9999; top:50%; width: 26.5px; height: 25px;}
+.subCont .subContList > li:nth-child(1) .btns{width:26.5px; height: 25px;}
 .subCont .subContList > li:nth-child(1) .nextbtn2{right:0;}
 .subCont .subContList > li:nth-child(1) .prevbtn2{left:0;}
 
