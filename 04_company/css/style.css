@@ -31,19 +31,18 @@ body{min-width: 1920px; font-family: 'Roboto', sans-serif;}
     box-shadow:none;
     border: 0 none;
     margin-bottom: 0;}
-.sliderWrap li.slider1st, .sliderWrap li.slider2st, .sliderWrap li.slider3st{background-repeat: no-repeat; background-position: center; background-size: cover; height: 1000px; position: relative;}
+.sliderWrap li.slider1st, .sliderWrap li.slider2st, .sliderWrap li.slider3st{background-repeat: no-repeat; background-position: center; background-size: cover; height: 1000px; }
 .sliderWrap li.slider1st{background-image: url(../imgs/메인배너.png);}
 .sliderWrap li.slider2st{background-image: url(../imgs/메인배너.png);}
 .sliderWrap li.slider3st{background-image: url(../imgs/메인배너.png);}
-
+.sliderWrap {position: relative; width: 100%;}
 .sliderWrap .slider_txt{position: absolute; left:50%; top:35%; transform: translate(-50%, -50%); color:white; text-align: center; text-shadow:5px 5px 5px #000}
-.slider_txt > h3{font-size: 46px; font-weight: bold; margin-bottom: 105px;}
+.slider_txt > h3{font-size: 46px; font-weight: bold; margin-bottom: 300px;}
 .slider_txt > p{font-size: 26px; font-weight: bold;}
-
-.sliderWrap .slider .nextbtn, .sliderWrap .slider .prevbtn{position: absolute; cursor: pointer; z-index: 9999; top:50%; }
-.sliderWrap .slider .btns {}
-.sliderWrap .slider .nextbtn{right:0;}
-.sliderWrap .slider .prevbtn{left:0;}
+.sliderWrap .box{width: 50%; height: 70px; top:50%; position: absolute; left: 25%; }
+.sliderWrap .nextbtn, .sliderWrap .prevbtn{position: absolute; cursor: pointer; z-index: 9999;}
+.sliderWrap .nextbtn{right:0;}
+.sliderWrap .prevbtn{left:0;}
 
 /*content*/
 .cont_bg{position: relative; background: #D1A07B; height: 1010px;}

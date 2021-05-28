@@ -1,10 +1,16 @@
 $(document).ready(function(){
-  $(".slider").bxSlider({
-    pager:true
+ var jwbslider =  $(".slider").bxSlider({
+    pager:true,
+    controls:false
   });
-});
+  $(".nextbtn").click(function(){
+  jwbslider.goToNextSlide();
+  });
 
-$(document).ready(function(){
+  $(".prevbtn").click(function(){
+  jwbslider.goToPrevSlide();
+  });
+
   var jwbslider1 = $(".slider2").bxSlider({
     pager:false,
     controls:false
