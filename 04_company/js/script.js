@@ -3,6 +3,7 @@ $(document).ready(function(){
     pager:true,
     controls:false
   });
+
   $(".nextbtn").click(function(){
   jwbslider.goToNextSlide();
   });
@@ -15,6 +16,7 @@ $(document).ready(function(){
     pager:false,
     controls:false
   });
+
   $(".nextbtn1").click(function(){
   jwbslider1.goToNextSlide();
   });
@@ -23,19 +25,23 @@ $(document).ready(function(){
   jwbslider1.goToPrevSlide();
   });
 
-  $(document).ready(function(){
-    var jwbslider2 = $(".slider3").bxSlider({
-      pager:false,
-      controls:false
-
-    });
-    $(".nextbtn2").click(function(){
-    jwbslider2.goToNextSlide();
-    });
-
-    $(".prevbtn2").click(function(){
-    jwbslider2.goToPrevSlide();
-    });
-
+  var jwbslider2 = $(".slider3").bxSlider({
+    pager:false,
+    controls:false
   });
+
+  $(".nextbtn2").click(function(){
+  jwbslider2.goToNextSlide();
+  });
+
+  $(".prevbtn2").click(function(){
+  jwbslider2.goToPrevSlide();
+  });
+
+  $(".youtube").colorbox({
+      iframe:true,
+      innerWidth:700,
+      innerHeight:393.75
+  })
+
 });
