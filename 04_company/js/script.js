@@ -40,8 +40,8 @@ $(document).ready(function(){
 
   $(".youtube").colorbox({
       iframe:true,
-      innerWidth:700,
-      innerHeight:393.75
+      innerWidth:1000,
+      innerHeight:562.5
   })
 
 });

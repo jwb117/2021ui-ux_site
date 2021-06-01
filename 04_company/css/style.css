@@ -51,6 +51,20 @@ body{min-width: 1920px; font-family: 'Roboto', sans-serif;}
 
 /* colorbox */
 #cboxOverlay{background: #7A009F;}
+#colorbox{outline:0;}
+    #cboxTopLeft{background:none;}
+    #cboxTopRight{background:none;}
+    #cboxBottomLeft{background:none;}
+    #cboxBottomRight{background:none;}
+    #cboxMiddleLeft{background:none;}
+    #cboxMiddleRight{background:none;}
+    #cboxTopCenter{background:none;}
+    #cboxBottomCenter{background:none;}
+#cboxContent{
+  box-shadow: 10px 10px 10px #000,
+  10px -10px 10px #000, -10px -10px 10px #000,
+  -10px 10px 10px #000, 0px 0px 10px #000; border-radius: 10px;
+}
 
 /*content*/
 .cont_bg{position: relative; background: #D1A07B; height: 1010px;}
