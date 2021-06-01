@@ -44,6 +44,12 @@ body{min-width: 1920px; font-family: 'Roboto', sans-serif;}
 .sliderWrap .nextbtn{right:0;}
 .sliderWrap .prevbtn{left:0;}
 
+.bx-wrapper .bx-pager{top:60%; }
+.bx-wrapper .bx-pager.bx-default-pager a{background: #ff5b28;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{background: #7A009F;}
+
 /*content*/
 .cont_bg{position: relative; background: #D1A07B; height: 1010px;}
 .content{position: relative;  top:-310px;}
