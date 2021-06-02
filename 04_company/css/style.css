@@ -18,11 +18,6 @@ body{min-width: 1920px; font-family: 'Roboto', sans-serif;}
 #main_menu li{float: left;}
 #main_menu li a{display: block; line-height:50px; padding:0 15px; color:white; font-weight: bold; font-size: 22px;}
 #main_menu li:hover{background: #7A009F;}
-#headerTop .toggleMenu{width: 50px; height: 50px; float: right; position: relative; display: flex; justify-content: center; align-items: center; display: none;}
-#headerTop .toggleMenu div{width: 30px; height: 3px; background: #fff; border-radius: 3px; position: absolute;}
-#headerTop .toggleMenu .bar1{transform: translateY(10px);}
-#headerTop .toggleMenu .bar2{}
-#headerTop .toggleMenu .bar3{transform: translateY(-10px);}
 
 /*slider*/
 .slider li img{width: 100%;}
