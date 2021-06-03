@@ -8,37 +8,15 @@ li{list-style: none;}
 
 .clearfix:after{content:""; display: block; clear: both;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src:url(../font-face/NanumBarunGothic.ttf);
+}
+@font-face {
+  font-family: 'NanumBarunGothicBold';
+  src:url(../font-face/NanumBarunGothicBold.ttf);
+}
+@font-face {
+  font-family: 'NanumBarunGothicLight';
+  src:url(../font-face/NanumBarunGothicLight.ttf);  
+}
